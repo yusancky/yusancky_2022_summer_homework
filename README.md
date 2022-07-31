@@ -1,1 +1,0 @@
-# yusancky_2022_summer_homework
