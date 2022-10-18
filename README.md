@@ -1,26 +1,24 @@
-# Basic Introduction
+# 简介
 
-A presentation slide made with [Slidev](https://sli.dev) about some characters in the Chinese novels [_Water Margin_](https://en.wikipedia.org/wiki/Water_Margin) _(also known as "_Shui Hu Zhuan_", "_Outlaws of the Marsh_" and "_All Men are Brothers_")_. 
+一个通过 [Slidev](https://cn.sli.dev) 制作的、关于中国小说《水浒传》主要人物的演示文稿。
 
-# Sort of releases
+# 发行版本迭代顺序
 
 ```mermaid
 graph LR;
-    1.0.0-beta-1.0-.->1.0.0-beta-1.1;
-    1.0.0-beta-1.0-->1.0.0-beta-2.0;
-    1.0.0-beta-1.1-.->1.0.0-beta-2.0;
-    1.0.0-beta-2.0-->1.0.0;
-    1.0.0-->1.0.1;
-    
-    subgraph 1.0.0-beta-1.x
+    subgraph 1.0.0-beta
     1.0.0-beta-1.0;
     1.0.0-beta-1.1;
-    end
-    subgraph 1.0.0-beta-2.x
     1.0.0-beta-2.0;
     end
     subgraph 1.0.x
     1.0.0;
     1.0.1;
     end
+    
+    1.0.0-beta-1.0-.->1.0.0-beta-1.1;
+    1.0.0-beta-1.0-->1.0.0-beta-2.0;
+    1.0.0-beta-1.1-.->1.0.0-beta-2.0;
+    1.0.0-beta-2.0-->1.0.0;
+    1.0.0-->1.0.1;
 ```
