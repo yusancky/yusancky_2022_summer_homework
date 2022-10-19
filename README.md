@@ -7,18 +7,21 @@
 ```mermaid
 graph LR;
     subgraph 1.0.0-beta
-    1.0.0-beta-1.0;
-    1.0.0-beta-1.1;
-    1.0.0-beta-2.0;
+    id1(1.0.0-beta-1.0);
+    id2(1.0.0-beta-1.1);
+    id3(1.0.0-beta-2.0);
     end
     subgraph 1.0.x
-    1.0.0;
-    1.0.1;
+    id4(1.0.0);
+    id5(1.0.1);
+    end
+    subgraph 1.1.x
+    id6(1.1.0);
     end
     
-    1.0.0-beta-1.0-.->1.0.0-beta-1.1;
-    1.0.0-beta-1.0-->1.0.0-beta-2.0;
-    1.0.0-beta-1.1-.->1.0.0-beta-2.0;
-    1.0.0-beta-2.0-->1.0.0;
-    1.0.0-->1.0.1;
+    id1-.->id2;
+    id1-->id3;
+    id3==>id4;
+    id4-->id5;
+    id5==>id6;
 ```
