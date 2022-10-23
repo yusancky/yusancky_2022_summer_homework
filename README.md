@@ -17,6 +17,7 @@ graph LR;
     end
     subgraph 1.1.x
     id6(1.1.0);
+    id7(1.1.1);
     end
     
     id1-.->id2;
@@ -24,4 +25,5 @@ graph LR;
     id3==>id4;
     id4-->id5;
     id5==>id6;
+    id6-->id7;
 ```
